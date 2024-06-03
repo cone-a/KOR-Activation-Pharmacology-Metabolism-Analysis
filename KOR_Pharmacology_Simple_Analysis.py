@@ -19,20 +19,11 @@ import matplotlib.dates as mdates
 
 #%%
 ### Read csv
-# df = pd.read_csv('D:/Phenomaster/WT Pharmacology Python.csv')
-# df["RER"] = pd.to_numeric(df.RER, errors='coerce')
-# df['Hour'] = pd.to_datetime(df['Hour'], errors = 'coerce')
-
-df = pd.read_csv('D:/KOR_Pharmacology_Phenomaster_Cumulative/Phenomaster_Data_Resub_Data.csv')
+df = pd.read_csv('your_path_to_file')
 df["RER"] = pd.to_numeric(df.RER, errors='coerce')
 df['Hour'] = pd.to_datetime(df['Hour'], errors = 'coerce')
 
 df.rename(columns = {'Subject ID':'Subject_ID'}, inplace = True)
-
-'MEthod 2'
-##Omits injection time point at 10:05#
-# df.loc[df['ThirtyMinute'] == '10:00 AM', ['VO2 (ml/h/kg)', 'VCO2 (ml/h/kg)', 'RER', 'Total Beam Breaks (counts)', 'Energy Expenditure (kcal/h/kg)', 'Ambulatory Movements (counts)']] = np.inf
-
 
 #### Adds XT + XT + Z ###
 
