@@ -20,6 +20,8 @@ import matplotlib.dates as mdates
 #%%
 ### Read csv
 df = pd.read_csv('your_path_to_file')
+
+
 df["RER"] = pd.to_numeric(df.RER, errors='coerce')
 df['Hour'] = pd.to_datetime(df['Hour'], errors = 'coerce')
 
