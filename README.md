@@ -1,5 +1,6 @@
 # KOR-Activation-Pharmacology-Metabolism-Analysis
-Simple metabolic phenomaster analysis 
+
+Simple metabolic phenomaster analysis. If you want to see additional calculations (there are more figures in the supplemental) or have any questions, don't hesitate to contact me.
 
 Check out our paper - (https://doi.org/10.1016/j.isci.2023.107241)
 
